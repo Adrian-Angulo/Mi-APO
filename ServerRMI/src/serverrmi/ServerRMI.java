@@ -47,17 +47,17 @@ public class ServerRMI extends UnicastRemoteObject implements RMIDAO{
 
     @Override
     public int restar(int numero1, int numero2) throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return numero1 - numero2;
     }
 
     @Override
     public int multiplicar(int numero1, int numero2) throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return numero1 * numero2;
     }
 
     @Override
     public float dividir(int numero1, int numero2) throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return numero1 / numero2;
     }
 
     @Override

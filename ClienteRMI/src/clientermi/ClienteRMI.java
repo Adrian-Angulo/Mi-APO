@@ -24,9 +24,19 @@ public class ClienteRMI {
         try{
             Registry registro=LocateRegistry.getRegistry("127.0.0.1",7777);
             RMIDAO interfaz = (RMIDAO) registro.lookup("RemotoRMI");
-            int suma;
+            int suma, resta, mult;
+            double div;
             suma = interfaz.sumar(10, 14);
-            System.out.println(suma);
+            resta = interfaz.restar(10, 9);
+            mult = interfaz.multiplicar(4,3);
+            div = interfaz.dividir(10, 2);
+            System.out.println("la suma es: "+suma);
+            System.out.println("La resta es: "+ resta);
+            System.out.println("La multiplicacion es: "+ mult);
+            System.out.println("La divicion es: "+div);
+            
+            
+            
         }catch(Exception e){
             System.out.println(""+e);
         }
